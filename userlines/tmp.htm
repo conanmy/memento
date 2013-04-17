@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"l>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{title}</title>
+	<link type="text/css" rel="stylesheet" href="../style/timeline.css" />
+	<script type="text/javascript" src="../js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="../js/share.js"></script>
+	<script type="text/javascript">
+		var key="{key}",uname="{uname}",targetid="{targetid}";
+		$(document).ready(function(){
+			var shareurl = "http://www.connect.renren.com/share/sharer?url="+encodeURIComponent(window.location.href)+"&title="+encodeURIComponent(document.title);
+			$("#share").attr("href",shareurl);
+			$("#notify").bind("click", function() {
+				$.get("../cal_notify.php", {
+					'key': key,
+					'url': document.location.href,
+					'targetid' : targetid,
+					'uname' : uname
+				}, function(data) {
+					data = $.parseJSON(data);
+					data.result == 1 ? alert("发送成功") : alert("发送失败");
+				});
+			});
+		});
+	</script> 
+</head>
+<body>
+	<div id="container">
+		{content}
+	</div>
+	<div class="footer">
+		<a id="share">分享</a>
+		<a id="notify">通知{targetname}</a>
+		<a href="http://apps.renren.com/memento/welcome.php" target="_blank">试试“记忆碎片”</a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body{
+	font-size: 12px;
+}
+#container {
+	width: 500px;
+	padding: 23px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: solid 2px #c6cad6;
+	position:relative;
+}
+div.post {
+	margin-bottom: 30px;
+	position: relative;
+}
+div.post h2 {
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: normal;
+	color: #333;
+	margin: 0px 0px 5px 0px;
+}
+div.post div.conversation{
+	position:relative;
+	padding:8px;
+	background:	#f1f4fd;
+	border:solid 1px #dedfe3;
+}
+div.post div.conversation .time_dot{
+	position: absolute;
+	left:-26px;
+	background:url("../pic/dot.png");
+	width:25px;
+	height:10px;
+}
+div.post div.conversation ul{
+	padding: 0;
+	margin: 5px 0 0 15px;
+}
+div.post div.conversation ul li {
+	padding: 0;
+	margin: 0;
+	color: #333;
+	list-style-type: none;
+	line-height: 20px;
+}
+div.post div.conversation h2 .label {
+	font-weight: bold;
+	color: #004646;
+}
+div.post .date {
+	vertical-align: middle;
+	margin: 0;
+	position: absolute;
+	left: -120px;
+	top: 6px;
+	font-size: 15px;
+	color: #4269a0;
+	text-decoration: none;
+	border: none;
+}
+#floatblock{
+	position:fixed;
+	width:50px;
+	top:20px;
+	right:25px;
+}
+.wrapper #floatblock{
+	position:fixed;
+	width:50px;
+	top:20px;
+	right:25px;
+}
+#floatblock ul{
+	padding-left:0;
+	list-style:none;
+}
+#floatblock ul li{
+	width:50px;
+	text-align:center;
+	font-size:14px;
+	font-weight:bold;
+	padding:0;
+}
+#floatblock ul .light{
+	width:50px;
+	text-align:center;
+	font-size:14px;
+	font-weight:normal;
+	padding:0;
+}
+.footer{
+	width:320px;
+	margin:0 auto 30px;
+}
+.footer a{
+	font-size:14px;
+	color:white;
+	text-decoration:none;
+	cursor:pointer;
+	padding:6px;
+	background-color:#FF6600;
+	border-radius: 2px;
+}

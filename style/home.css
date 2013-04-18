@@ -1,0 +1,121 @@
+body {
+    font-size: 12px;
+}
+#target {
+    width: 150px;
+}
+#target_confirm {
+    padding: 2px 5px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    background: #FF6600;
+}
+.input_area {
+    width: 500px;
+    text-align: center;
+    margin: 60px auto 0;
+    font-size: 14px;
+}
+.input_area p {
+    font-size: 12px;
+}
+/*--autocomplete样式--*/
+.ac_results ul, li {
+    list-style: none;
+    padding: 0;
+}
+.ac_results ul {
+    margin-top: 3px;
+    margin-left: 0;
+    max-height: 300px;
+    border: 1px solid #E3EEF8;
+}
+.ac_results li {
+    padding: 2px 0 0 0;
+    cursor: pointer;
+    background: white;
+}
+.ac_results li span {
+    vertical-align: top;
+    padding-left: 5px;
+}
+.ac_results li span strong {
+    vertical-align: top;
+}
+.ac_results li:hover {
+    background-color: #FF6600;
+}
+
+#tools {
+    margin: 0 auto;
+    width: 610px;
+    display: none;
+}
+#tools li {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px;
+    text-align: center;
+    float: left;
+    margin-left: 40px;
+    background: #FF6600;
+}
+#tools #check_feed {
+    margin-left: 2px;
+    font-size: 12px;
+    font-weight: normal;
+    color: #000000;
+    height: 20px;
+    line-height: 20px;
+    float: left;
+    background: white;
+}
+#invite {
+    color: #ffffff;
+    text-decoration: none;
+}
+.loading {
+    width: 80px;
+    margin: 50px auto;
+}
+.loading a {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    background: url("pic/loading.gif");
+}
+
+/*--弹出层样式--*/
+.upLayer {
+    display: none;
+    position: absolute;
+    bottom: 100px;
+    left: 25%;
+    width: 50%;
+    padding: 10px 10px;
+    background-color: #FF6600;
+    border: 1px solid black;
+    z-index: 2;
+    overflow: auto;
+}
+.midLayer {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #B9B9B9;
+    z-index: 1;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.closeButton {
+    width: 100%;
+    text-align: right;
+}
